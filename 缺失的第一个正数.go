@@ -18,18 +18,18 @@ package main
 //
 //你的算法的时间复杂度应为O(n)，并且只能使用常数级别的空间。
 
-func main()  {
+func main() {
 
 }
 
 func firstMissingPositive(nums []int) int {
 	var m = make(map[int]int)
-	for _,val := range nums{
+	for _, val := range nums {
 		m[val] = 0
 	}
 
-	for i := 1; i < 1<<32; i ++{
-		if _,ok := m[i];!ok{
+	for i := 1; i < 1<<32; i++ {
+		if _, ok := m[i]; !ok {
 			return i
 		}
 	}

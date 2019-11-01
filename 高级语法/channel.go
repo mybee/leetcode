@@ -6,13 +6,12 @@ import (
 	"runtime/pprof"
 )
 
-
-func main(){
-	cache:=make(chan int,4)
+func main() {
+	cache := make(chan int, 4)
 	var name chan string
 	go func() {
-		for i:=0;i< 10;i++ {
-			cache<-i
+		for i := 0; i < 10; i++ {
+			cache <- i
 			fmt.Println("1234")
 			go func() {
 				select {

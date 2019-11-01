@@ -3,13 +3,13 @@ package main
 import "math"
 
 //Definition for a binary tree node.
- type TreeNode struct {
-     Val int
-     Left *TreeNode
-     Right *TreeNode
- }
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
 
-var  last = -math.MaxFloat64
+var last = -math.MaxFloat64
 
 func isValidBST(root *TreeNode) bool {
 	if root == nil {

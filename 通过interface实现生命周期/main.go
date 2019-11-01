@@ -24,7 +24,6 @@ func (nokiaPhone iPhone6) Stop() {
 	fmt.Println("I am iphone6, I am stop!")
 }
 
-
 func main() {
 	//var phone phone.Iphone
 	phone := new(iPhone6)

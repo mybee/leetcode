@@ -37,15 +37,13 @@ type Student struct {
 }
 
 func main() {
-	m := map[string]Student{"people": {"li"},}
+	m := map[string]Student{"people": {"li"}}
 	m["people"].name = "liu"
 	m["annimal"].name = "niu"
 
-	for _, v := range  m {
+	for _, v := range m {
 		defer func() {
 			fmt.Println(v.name)
 		}()
 	}
 }
-
-

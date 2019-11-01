@@ -3,7 +3,6 @@ package phone
 import "fmt"
 
 type Iphone struct {
-
 }
 
 type Phone interface {

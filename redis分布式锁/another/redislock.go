@@ -48,4 +48,3 @@ func (this *RedisLock) Lock(rd *redis.Conn, timeout int) error {
 func (this *RedisLock) Unlock(rd *redis.Conn) {
 	delScript.Do(*rd, this.lockKey, this.value)
 }
-
